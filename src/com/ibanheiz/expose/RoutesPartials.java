@@ -31,6 +31,9 @@ public class RoutesPartials extends HttpServlet {
 		if (request.getPathInfo().equals("/cliente")) {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/src/template/partials/message-validation.html");
 			dispatcher.forward(request, response);
+		} else if (request.getPathInfo().equals("/confirme-dialog")) {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/src/template/partials/confirme-dialog.html");
+			dispatcher.forward(request, response);
 		} else {
 			response.setStatus(NOT_FOUND);
 		}

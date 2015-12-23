@@ -60,3 +60,14 @@
 	transition: border 300ms;
 	transition-timing-function: ease-out;
 }
+
+.dialog-container {
+	background: #333;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	opacity: .7;
+	z-index: 10;
+}
