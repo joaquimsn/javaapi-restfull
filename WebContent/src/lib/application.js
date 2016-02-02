@@ -18,6 +18,9 @@ angular.module('appJava').config(function($routeProvider, $locationProvider) {
 		.when("/java-angular/cliente", {
 			templateUrl: "/java-angular/views/cliente",
 			controller: "ClienteController"
+		}).when("/java-angular/", {
+			templateUrl: "/java-angular/views/home",
+			controller: "RelatorioController"
 		});
 	
 	$locationProvider.html5Mode(true);

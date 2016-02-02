@@ -31,6 +31,10 @@ public class RoutesViews extends HttpServlet {
 		if (request.getPathInfo().equals("/cliente")) {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/src/template/cliente.html");
 			dispatcher.forward(request, response);
+		} else if(request.getPathInfo().equals("/home")) {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/src/template/home.html");
+			dispatcher.forward(request, response);
+			
 		} else {
 			response.setStatus(NOT_FOUND);
 		}
